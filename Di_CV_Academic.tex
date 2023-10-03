@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+
+% REMOVE THIS
+\usepackage[latin, english]{babel}
+\usepackage{lipsum}  
+
+%% EDIT THIS: set \rightsidetrue for right side years, 
+%\rightsidefalse for left side
+\newif\ifrightside
+% \rightsidetrue
+\rightsidefalse
+
+%% EDIT THIS: to bold all mention of \citationboldauthor
+\newcommand{\citationboldauthor}{J. J. Doe}
+
+%% OPTIONAL: change url link color
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\urllinkcolor}{MidnightBlue}
+
+%% IMPORTANT: load template
+\usepackage{AcademicCVTemplate}
+
+%% OPTIONAL: change font
+\usepackage{fontspec}
+\setmainfont[
+  Path = fonts/,
+  Numbers=OldStyle,
+  BoldFont=LinLibertineRB.ttf,
+  ItalicFont=LinLibertineRI.ttf
+]{LinLibertineR.ttf}
+
+% \cfoot{Page \thepage\ of \pageref*{LastPage}}
+\cfoot{\thepage}
+
+\definecolor{dimgray}{rgb}{0.45, 0.45, 0.45}
+\newcommand{\smallitem}[1]{\small\textcolor{dimgray}{#1}}
+
+
+\begin{document}
+
+\begin{leftsideheader}
+% THE HEADER
+\begin{flushleft}
+    \hfill{\updateinfo} \\
+    
+    {\huge Dylan Di} \\[5pt]
+    % {\centering \huge Jane-John Doe\par}
+    
+    635 South Hobart Boulevard \hfill \texttt{qdi@usc.edu} \\
+    
+    Los Angeles, CA 90005, USA \hfill \texttt{(818)688-3330} \\
+\end{flushleft}
+{\centering\rule{7.4in}{1pt}\par}
+% \cvtitle{Curriculum Vitae}
+\end{leftsideheader}
+
+\section{Education}
+\textsc{University of Southern California, Los Angeles, CA} \years{08/2022 - 05/2024}\\ 
+Master of Urban Planning. Concentration: Mobility and Transportation Planning.\\
+
+\textsc{The University of British Columbia, Vancouver, BC} \years{09/2018 - 05/2022}\\
+Bachelor of Arts. Majors: Geography. Minor: Urban Studies.\\
+
+
+\section{Research Experience}
+Directed Research. \years{08/2023 - 12/2023}\\
+\textsc{USC Sol Price School of Public Policy, Los Angelse, CA}\\
+\smallitem{Supervisor: Professor Genevieve Giuliano}\\
+
+
+Research Assistant. \years{08/2022 - 11/2022}\\
+\textsc{USC Sol Price School of Public Policy, Los Angeles, CA} \\
+\smallitem{PI: Professor Geoff Boeing}\\
+
+
+Research Seminar. \years{01/2022 - 04/2022}\\
+\textsc{UBC Department of Geography, Vancouver, BC}\\
+\smallitem{Instructor: Dr. Natasha Fox}\\
+
+
+
+\section{Publications}
+\begin{etaremune}[itemsep=0pt, parsep=0pt, leftmargin = \enumleftmargin] 
+    \citeitem{https://doi.org/10.1145/3495018.3501157}{Q. Di, L. Yang, M. An}{Research on Spatial Accessibility of Urban Facilities Using Geographic Information Science and Road Network Data}{2021}{2021 3rd International Conference on Artificial Intelligence and Advanced Manufacture}{2650, 2654}
+\end{etaremune}
+
+
+\section{Professional Employment}
+Transportation Engineering/Planning Intern. \years{05/2023 - }\\
+\textsc{Fehr and Peers, Long Beach, CA}\\
+
+GIS Intern. \years{04/2021 - 08/2021} \\
+\textsc{China Northeastern Municipal Engineering Design and Research Institute, Changchun, China} \\
+
+Assistant Project Manager. \years{05/2020 - 10/2020} \\
+\textsc{Anhui Zhonghui Jianyin Construction and Management Co., Ltd, Huaibei, China} \\
+
+
+\section{Service and Volunteering}
+International Chair. \years{04/2023 - 04/2024}\\
+\textsc{Associated Students of Planning and Development at USC}\\
+
+Staff. \years{02/2023 - 03/2023}\\
+\textsc{The sixth annual Region 9 Pacific Southwest Region University Center Congress}\\
+
+\section{Professional Membership}
+\textsc{American Planning Association},  \ Los Angeles Chapter\\
+\textsc{Ameican Association of Geographers}\\
+\textsc{Urban Land Institute}\\
+\textsc{Canadian Institue of Planners}\\
+\textsc{Canadian Association of Geographers}\\
+
+
+\section{Technical Skills}
+Programming languages: Python, R, SAS
+
+Geographic Information Systems: ArcGIS, QGIS
+
+Traffic Operations: Synchro, PTV Vistro, ITE TripGen
+
+Visualizations: Adobe Creative Cloud\ (Photoshop, Illustrator, InDesign)
+
+Languages: Chinese-Mandarin\ (Native Proficiency), English\ (Full Professional Proficiency), Chinese-Cantonese\ (Limited Working Proficiencye)
+
+\end{document}

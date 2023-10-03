@@ -53,7 +53,7 @@
 
 % settings for left or right years labels
 \ifrightside
-    \geometry{a4paper, 
+    \geometry{letterpaper, 
     marginparwidth=1.15in, marginparsep=4pt,
     tmargin= 0.75in, 
     % rmargin = 1.65in, 
@@ -66,7 +66,7 @@
     
     \newcommand{\enumleftmargin}{14pt}
 \else
-    \geometry{a4paper, 
+    \geometry{letterpaper, 
     marginparwidth=1.15in, marginparsep=4pt,
     tmargin= 0.75in, 
     rmargin = 0.5in, 
@@ -96,13 +96,6 @@
 % set up citation system for publications
 % will bold \citeboldauthor automatically
 % call \citeitem{url to paper}{authors}{title}{year}{journal}{volume, page}
-\RequirePackage{luacode}
-\begin{luacode}
-function highlight_word ( txt )
-  return string.gsub ( txt, "\citationboldauthor", "{\\bfseries \%0}" )
-end
-luatexbase.add_to_callback ( "process_input_buffer", highlight_word, "highlight_word" )
-\end{luacode}
 
 % set up citation style
 \def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
